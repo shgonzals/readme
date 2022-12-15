@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Sheila González</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">INICIO</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">SOBRE MÍ</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">EXPERIENCIA</a>
+        <a href="#estudios" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ESTUDIOS</a>
+        <a href="#conocimientos" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONOCIMIENTOS</a>
+        
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.jpg" class="w3-circle w3-border w3-border-sand" 
+        style="border-width: 3px !important;width: 200px; height: 200px;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-light-green" href="https://www.linkedin.com/in/sh-gonzal/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+           <a class="icon-link" href="./CV-SheilaGonzalez.pdf" style="color:white;" target="_blank" download="CV-SheilaGonzalez.pdf">
+              <i data-feather="download"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-light-green" href="https://github.com/shgonzals" target="_blank">
+             <i data-feather="github"></i>
+          </a>
+          
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <!--Contacto-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h5 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;color:white;">CONTACTO</h5>
+            <div class="w3-margin-top-2" style="font-weight: 300;color:white;">
+              <p>Sheila González Salinas</p>
+              <p>688950612</p>
+              <p>Valencia</p>
+              <p>sh.gonzal.s@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--
+        <button onclick="topFunction()" id="btnTop">Top</button>
+        -->
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">INICIO</a>
+          <!--
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACTO</a>
+          -->
+          <a href="#conocimientos" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONOCIMIENTOS</a>
+          <a href="#estudios" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ESTUDIOS</a>
+
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCIA</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SOBRE MÍ</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <!--
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            -->
+            <p style="font-style: italic; font-size:x-large;">"Dreams are extremely important. You can't do it unless you imagine it."</p>
+            <h1>Sheila González Salinas</h2>
+            <h2>Full-Stack Developer</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;">SOBRE MÍ</h2>
+            <p class="w3-margin-top-2"> 
+              Desarrolladora web de la Comunidad Valenciana con gran vocación por la programación y nuevas tecnologías. Estoy centrada tanto en tecnologías front-end como back-end. 
+            </p>
+            <p class=""> 
+              Actualmente estoy desarrollando funcionalidades como fullstack con Java y ExtJS. 
+            </p>
+            <p class=""> 
+              Me considero una persona con gran capacidad resolutiva, dinámica y con adaptación a nuevos entornos y dificultades, buena compañera en el trabajo en equipo y con ganas de seguir formándome y progresando en las tecnologias del desarrollo. 
+            </p>
+          </div>
+
+          <!--EXPERIENCIA-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;">EXPERIENCIA</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <div class="">
+                <h4>Full-Stack Developer en Capgemini</h4>
+                <p>Julio 2021 - Presente</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Desarrollo de front-end (ExtJS) y back-end (Java)</li>
+                  <li>Mantenimiento de aplicaciones</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Full-Stack Developer en Grupo Oesía</h4>
+                <p>Abril 2021 - Julio 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Desarrollo de back-end (Java 8)</li>
+                  <li>Ejecución y creación de pruebas</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Full-Stack Developer en PFS Group S.L.</h4>
+                <p>Abril 2020 - Marzo 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Desarrollo de front-end (ExtJS/Angular) y back-end (Java)</li>
+                  <li>Mantenimiento de aplicaciones</li>  
+                  <li>Ejecución de pruebas</li>
+                  <li>Análisis de requisitos</li>
+                  <li>Desarrollo de documentación funcional</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Full-Stack Developer en Cofares</h4>
+                <p>Octubre 2019 - Abril 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Desarrollo de front-end (ExtJS) y back-end (Java)</li>
+                  <li>Mantenimiento de aplicaciones</li>  
+                  <li>Ejecución de pruebas</li>
+                  <li>Desarrollo de documentación funcional</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Full-Stack Developer en Indra</h4>
+                <p>Julio 2017 - Septiembre 2019 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Desarrollo de front-end (ExtJS) y back-end (Java)</li>
+                  <li>Mantenimiento de aplicaciones</li>  
+                  <li>Ejecución de pruebas</li>
+                  <li>Desarrollo de documentación funcional</li>
+                </ul>
+              </div>
+               <div class="">
+                <h4>Becaria en Indra</h4>
+                <p>Marzo 2017 - Junio 2017 </p>
+              </div>
+            </div>
+          </div>
+
+          <!---EDUCATION SECTION-->
+          <div id="estudios" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;">ESTUDIOS</h2>
+            
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+                <h4>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h4>
+                <p>2015 - 2017 </p>
+            </div>
+
+          </div>
+
+          <!--SKILLS SECTION-->
+          <div id="conocimientos" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;">Conocimientos</h2> 
+             <h4>Cursos</h4> 
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>Angular 8 (40h) - 2019</li>
+              <li>Errores recurrentes en la programación SW (20h) - 2018</li>
+              <li>Oracle11g Lenguaje PL/SQL II (12h) - 2018</li>
+              <li>Teambuilding, cómo hacer equipo (4h) - 2018</li>
+            </ul>
+            <br/>
+            <h4>Conocimientos técnicos</h4> 
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+                <div>
+                  JAVA
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:90%;height:10px;"></div>
+                  </div>
+                 <br/>
+                  ExtJS
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:75%;height:10px;"></div>
+                  </div>
+                  <br/>
+                  Oracle/SQL
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:75%;height:10px;"></div>
+                  </div>
+                 <br/>
+                  PL/SQL
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:50%;height:10px;"></div>
+                  </div>
+                  <br/>
+                  Hibernate
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:50%;height:10px;"></div>
+                  </div>
+                 <br/>
+                  REST
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:90%;height:10px;"></div>
+                  </div>
+                  <br/>
+                  Angular
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:25%;height:10px;"></div>
+                  </div>
+                 <br/>
+                  GIT
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:50%;height:10px;"></div>
+                  </div>
+                  <br/>
+                </div>
+              </div>
+
+              <h4>Idiomas</h4>
+             <div class="w3-container w3-margin-top-2 w3-cursive">
+                <div>
+                  Español
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:100%;height:10px;"></div>
+                  </div>
+                 <br/>
+                  Inglés
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:40%;height:10px;"></div>
+                  </div>
+                  <br/>
+                  Valenciano
+                  <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-container w3-light-green w3-round-xlarge" style="width:40%;height:10px;"></div>
+                  </div>
+                 <br/>
+                </div>
+            </div>
+          </div>
+
+          <!---EDUCATION SECTION-->
+          <div id="intereses" class="w3-container w3-margin-top-20-percent w3-cursive">
+           
+
+            <!--REFERENCE SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Jane Doe, CEO at Company-Z</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
+          </div>
+          -->
+          <!--CONTACT SECTION
+
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-light-green" style="border-width: 3px !important;">CONTACTO</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Sheila González Salinas</p>
+              <p>688950612</p>
+              <p>Valencia</p>
+              <p>sh.gonzal.s@gmail.com</p>
+            </div>
+          </div>
+-->
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2022 - Sheila González</p>
+           <p class="w3-small">This website was made with W3schools Spaces.</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("btnTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
